@@ -1,6 +1,6 @@
 ---
 name: ui-design
-description: "Design system + UX intelligence. Direction artistique bold (anti-AI-slop) + regles UX structurees. 5 modes : INIT (genere design system), BUILD (implemente avec rigueur UX + micro-copy + preview responsive + MCP verification), REVIEW (audit UI avec score quantitatif), EXTEND (sous-tone), MIGRATE (refonte progressive). Catalogues externalises (~100 palettes, ~40 font pairings), 15 component patterns, 99 regles UX, contraste automatise WCAG."
+description: "Design system + UX intelligence. Direction artistique bold (anti-AI-slop) + regles UX structurees. 5 modes : INIT (genere design system), BUILD (implemente avec rigueur UX + micro-copy + preview responsive + MCP verification), REVIEW (audit UI avec score quantitatif), EXTEND (sous-tone), MIGRATE (refonte progressive). Catalogues externalises (~100 palettes, ~40 font pairings), 15 component patterns, 99 regles UX, contraste automatise WCAG. Tendances 2026 : patterns extraits de 40+ sites primes Awwwards/CSSDA (animations scroll-driven, bento grid, mesh gradients, fluid type, dark premium, CTA sticky, social proof)."
 ---
 
 # UI Design — Direction artistique + UX Intelligence
@@ -17,8 +17,9 @@ Le skill est decoupe en fichiers pour optimiser la consommation de tokens :
 | `palettes.md` | ~100 palettes par industrie | Mode INIT uniquement |
 | `font-pairings.md` | ~40 pairings Google Fonts | Mode INIT uniquement |
 | `component-patterns.md` | 15 patterns de composants | Mode BUILD (quand un composant courant est demande) |
+| `trends-2026.md` | Patterns landing pages 2026 (animations, layouts, couleurs, typo, CTA) | Mode BUILD (landing pages et sites vitrines) |
 
-**Regle de chargement :** Ne lire les fichiers externes QUE quand le mode correspondant est actif. En mode BUILD courant (sans composant standard), seul SKILL.md suffit.
+**Regle de chargement :** Ne lire les fichiers externes QUE quand le mode correspondant est actif. En mode BUILD courant (sans composant standard ni landing page), seul SKILL.md suffit.
 
 ## Routing — Detection automatique du mode
 
@@ -146,6 +147,8 @@ Lire `design-system.md` a la racine du projet. Toute decision de couleur, typo, 
 Si des incoherences sont detectees entre le code existant et le design system, les signaler avant de continuer.
 
 **Si un composant standard est demande** (bouton, card, modal, form, table, nav, toast, tabs, accordion, badge, breadcrumbs, avatar, stepper, skeleton, empty state), **charger `component-patterns.md`** et adapter le pattern au design system du projet.
+
+**Si une landing page ou un site vitrine est demande**, **charger `trends-2026.md`** pour appliquer les patterns actuels (animations scroll-driven, bento grid, hero split, mesh gradients, fluid type, CTA sticky, social proof en couches). Ce fichier contient des snippets CSS/JS directement implementables, extraits de l'analyse des sites primes Awwwards/CSSDA 2025-2026.
 
 ### Etape 2 : Direction artistique en action
 

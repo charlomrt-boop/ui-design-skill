@@ -22,6 +22,7 @@ Design system + UX intelligence for Claude Code. Creates distinctive, production
 | `palettes.md` | ~100 industry-specific color palettes | ~3k |
 | `font-pairings.md` | ~40 Google Fonts pairings by mood | ~1k |
 | `component-patterns.md` | 15 production-ready component patterns | ~5k |
+| `trends-2026.md` | Landing page patterns from 40+ Awwwards/CSSDA winners | ~4k |
 
 Files are loaded conditionally — BUILD mode only needs `SKILL.md` (~4k tokens used), INIT loads palettes + fonts on demand.
 
@@ -36,6 +37,7 @@ Files are loaded conditionally — BUILD mode only needs `SKILL.md` (~4k tokens 
 - **WordPress-native** — wpautop rules, WP Rocket compat, template-only classes, zero inline JS
 - **Anti-AI-slop guards** — bans generic fonts in display, purple gradients, cookie-cutter layouts
 - **Quantitative audit scoring** — 0-100 scale, trackable across audits
+- **2026 design trends** — patterns from 40+ Awwwards/CSSDA winning sites: CSS scroll-driven animations, bento grid, mesh/aurora gradients, fluid type with `clamp()`, dark premium palettes, sticky CTA, social proof layers, magnetic buttons, text reveals
 
 ## Comparison
 
