@@ -17,7 +17,7 @@ Le skill est decoupe en fichiers pour optimiser la consommation de tokens :
 | `palettes.md` | ~100 palettes par industrie | Mode INIT uniquement |
 | `font-pairings.md` | ~40 pairings Google Fonts | Mode INIT uniquement |
 | `component-patterns.md` | 15 patterns de composants | Mode BUILD (quand un composant courant est demande) |
-| `trends-2026.md` | Patterns landing pages 2026 (animations, layouts, couleurs, typo, CTA) | Mode BUILD (landing pages et sites vitrines) |
+| `design-trends-2026.md` | Tendances design 2026 : animations, layouts, couleurs, typo, CTA (40+ sites primes) | Mode INIT (inspiration) + Mode BUILD (implementation) |
 
 **Regle de chargement :** Ne lire les fichiers externes QUE quand le mode correspondant est actif. En mode BUILD courant (sans composant standard ni landing page), seul SKILL.md suffit.
 
@@ -74,6 +74,10 @@ Choisir un tone et l'executer avec conviction. Le design doit etre MEMORABLE, pa
 - **Layouts :** grille SaaS 3-colonnes previsible, hero + features + pricing cookie-cutter → interdits.
 - **Patterns :** cards identiques en rangee, gradients lineaires timides, illustrations undraw → interdits.
 - **Convergence :** ne JAMAIS converger vers les memes choix entre projets. Si un font/palette a deja ete utilise recemment, en choisir un autre.
+
+### Etape 2b : S'inspirer des tendances actuelles
+
+**Charger le fichier `design-trends-2026.md`** pour s'inspirer des patterns des meilleurs sites actuels (Awwwards, CSSDA 2025-2026). Utiliser les tendances pertinentes pour le projet : fluid type, mesh gradients, dark premium, scroll animations, bento grid, etc. Ne pas tout appliquer — selectionner ce qui sert le tone choisi.
 
 ### Etape 3 : Selection palette
 
@@ -148,7 +152,7 @@ Si des incoherences sont detectees entre le code existant et le design system, l
 
 **Si un composant standard est demande** (bouton, card, modal, form, table, nav, toast, tabs, accordion, badge, breadcrumbs, avatar, stepper, skeleton, empty state), **charger `component-patterns.md`** et adapter le pattern au design system du projet.
 
-**Si une landing page ou un site vitrine est demande**, **charger `trends-2026.md`** pour appliquer les patterns actuels (animations scroll-driven, bento grid, hero split, mesh gradients, fluid type, CTA sticky, social proof en couches). Ce fichier contient des snippets CSS/JS directement implementables, extraits de l'analyse des sites primes Awwwards/CSSDA 2025-2026.
+**Pour tout projet UI**, **charger `design-trends-2026.md`** pour s'inspirer des tendances actuelles (animations scroll-driven, bento grid, mesh gradients, fluid type, dark premium, glow effects, magnetic buttons). Ce fichier contient des snippets CSS/JS directement implementables, extraits de 40+ sites primes Awwwards/CSSDA 2025-2026. Piocher les patterns pertinents selon le tone et le contexte du projet — ne pas tout appliquer systematiquement.
 
 ### Etape 2 : Direction artistique en action
 

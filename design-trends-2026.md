@@ -1,7 +1,7 @@
-# Tendances Landing Pages 2025-2026
+# Design Trends 2026 — Patterns des meilleurs sites web
 
-Patterns extraits de l'analyse des sites primes Awwwards, CSSDA, Webby Awards 2025-2026.
-Charger ce fichier en mode BUILD quand une landing page ou un site vitrine est demande.
+Patterns extraits de 40+ sites primes Awwwards, CSSDA, Webby Awards 2025-2026.
+**Charger ce fichier en mode INIT et BUILD** pour produire des interfaces memorables et actuelles. S'applique a tout type de projet : landing pages, apps, dashboards, sites vitrines, e-commerce, portfolios.
 
 ---
 

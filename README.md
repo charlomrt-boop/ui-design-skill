@@ -22,7 +22,7 @@ Design system + UX intelligence for Claude Code. Creates distinctive, production
 | `palettes.md` | ~100 industry-specific color palettes | ~3k |
 | `font-pairings.md` | ~40 Google Fonts pairings by mood | ~1k |
 | `component-patterns.md` | 15 production-ready component patterns | ~5k |
-| `trends-2026.md` | Landing page patterns from 40+ Awwwards/CSSDA winners | ~4k |
+| `design-trends-2026.md` | Design patterns from 40+ Awwwards/CSSDA winners (all project types) | ~4k |
 
 Files are loaded conditionally — BUILD mode only needs `SKILL.md` (~4k tokens used), INIT loads palettes + fonts on demand.
 
